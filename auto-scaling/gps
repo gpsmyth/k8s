@@ -1,0 +1,77 @@
+apiVersion: v1
+items:
+- apiVersion: extensions/v1beta1
+  kind: Deployment
+  metadata:
+    annotations:
+      deployment.kubernetes.io/revision: "1"
+      kubectl.kubernetes.io/last-applied-configuration: |
+        {"apiVersion":"apps/v1","kind":"Deployment","metadata":{"annotations":{},"labels":{"app":"acg-stress"},"name":"acg-web","namespace":"acg-ns"},"spec":{"replicas":1,"selector":{"matchLabels":{"app":"acg-stress"}},"strategy":{"rollingUpdate":{"maxSurge":1,"maxUnavailable":0},"type":"RollingUpdate"},"template":{"metadata":{"labels":{"app":"acg-stress"}},"spec":{"containers":[{"image":"k8s.gcr.io/hpa-example","name":"stresser","ports":[{"containerPort":80}],"resources":{"requests":{"cpu":0.2}}}]}}}}
+    creationTimestamp: "2019-08-10T06:57:24Z"
+    generation: 4
+    labels:
+      app: acg-stress
+    name: acg-web
+    namespace: acg-ns
+    resourceVersion: "3299"
+    selfLink: /apis/extensions/v1beta1/namespaces/acg-ns/deployments/acg-web
+    uid: 1bc0067c-bb3c-11e9-b077-02834a3b3850
+  spec:
+    progressDeadlineSeconds: 600
+    replicas: 10
+    revisionHistoryLimit: 10
+    selector:
+      matchLabels:
+        app: acg-stress
+    strategy:
+      rollingUpdate:
+        maxSurge: 1
+        maxUnavailable: 0
+      type: RollingUpdate
+    template:
+      metadata:
+        creationTimestamp: null
+        labels:
+          app: acg-stress
+      spec:
+        containers:
+        - image: k8s.gcr.io/hpa-example
+          imagePullPolicy: Always
+          name: stresser
+          ports:
+          - containerPort: 80
+            protocol: TCP
+          resources:
+            requests:
+              cpu: 200m
+          terminationMessagePath: /dev/termination-log
+          terminationMessagePolicy: File
+        dnsPolicy: ClusterFirst
+        restartPolicy: Always
+        schedulerName: default-scheduler
+        securityContext: {}
+        terminationGracePeriodSeconds: 30
+  status:
+    availableReplicas: 8
+    conditions:
+    - lastTransitionTime: "2019-08-10T06:57:24Z"
+      lastUpdateTime: "2019-08-10T06:57:43Z"
+      message: ReplicaSet "acg-web-7d5fd9b75f" has successfully progressed.
+      reason: NewReplicaSetAvailable
+      status: "True"
+      type: Progressing
+    - lastTransitionTime: "2019-08-10T07:19:26Z"
+      lastUpdateTime: "2019-08-10T07:19:26Z"
+      message: Deployment does not have minimum availability.
+      reason: MinimumReplicasUnavailable
+      status: "False"
+      type: Available
+    observedGeneration: 4
+    readyReplicas: 8
+    replicas: 10
+    unavailableReplicas: 2
+    updatedReplicas: 10
+kind: List
+metadata:
+  resourceVersion: ""
+  selfLink: ""
