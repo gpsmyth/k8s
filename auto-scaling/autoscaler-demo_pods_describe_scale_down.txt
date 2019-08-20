@@ -1,0 +1,521 @@
+Name:           autoscaler-demo-7d467dd49b-2s47v
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.24.53
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://7ace9f1a2acd111608bfc0503cab8bb43da11d35a8b7c87fb5efa2b078e0b8d9
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:16 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-2s47v to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-57t8q
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:34 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.21.190
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://c601b351658aa9697a9e0e4bf6d6502f7732acf869b07d1e2d40ebedb30f5098
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:56:42 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-57t8q to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-5qtcx
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.23.62
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://05c92d27ecb9865ff2b3682aaad3840366c94bbd18d9844cabe40c253985370e
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:09 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-5qtcx to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-7m76x
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.5.107
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://1870489e845ff428818cb0590b980f8025e0c7616ab3ce76bb4f448fc8da73db
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:19 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                  Age                 From                                                        Message
+  ----     ------                  ----                ----                                                        -------
+  Normal   Scheduled               51m                 default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-7m76x to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "1d28534c616dedc3bab6e298a4d47eef9344b9e77fa7e8e75e276074862bb565" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "61256054fcd04ca68ac1f82942c014b5fd651ea5f0ddab242405cb1b48345a2f" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "bef1304fb661955a296dabb53818608a7bb29dd86f24d857cfa358f2bd9911d4" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "88da8589437d31a1ddf222aeadc7af8caa8922eb284117e6b361c3525fcb34b0" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "457a749a715f6fd724beb461d02e364e3fd194c367668ec6a80cd9ce217f17cf" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "25e710745d4d85c6783c9e9ce528cb1e1e75f9a82e32bd1cac5a032c9dd486d7" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "9cd2fbb9694d03b0d217427159d9ffd6baf721d623fb2d2537bf83081d1ac8c4" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "9dc681215b6e44103268e7489cb2ea227ec593ac200f9a568dfef39dbe879845" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "26531a3888af1e2d0d664821760c18ed9d138ab0c0a0290f778c57f9e19ac6b2" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Normal   SandboxChanged          51m (x11 over 51m)  kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Pod sandbox changed, it will be killed and re-created.
+  Warning  FailedCreatePodSandBox  51m (x2 over 51m)   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  (combined from similar events): Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "9ebdb97f78719cc122340114b0b5d3527f90ff73fd928f292e51b231ac9ce12c" network for pod "autoscaler-demo-7d467dd49b-7m76x": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-7m76x_default" network: add cmd: failed to assign an IP address to container
+  Normal   Pulling                 51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal   Pulled                  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal   Created                 51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+
+Name:           autoscaler-demo-7d467dd49b-99m89
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.0.83
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://d8ce28fb7f4d92faee7de80ac1f86ced973edf2b1c970c05cd0938d9b05d24fa
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:56:59 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-99m89 to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-c6zfv
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.18.221
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://7c526cf024b7aca219b0fefeb4177ba84e69a3de6fb4d260e453e6f3e6f03214
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:26 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                  Age                From                                                        Message
+  ----     ------                  ----               ----                                                        -------
+  Normal   Scheduled               51m                default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-c6zfv to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "1b60b966082e6879d60781ad5a3c770295ee1eb0313c7a84bf4903db6c87098f" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "26933f31496264c27f113c473787877aa0bad3bade95083eb3b0f0aa28ac4537" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "7aecf5fdb70fc44e2760f0f6a8f3cd326d6abb716e9f3b07b213ab773a63fd76" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "31285acfdf39bed64a57207b4e04339a71b8aa6e585007266eba4f85cc33145d" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "9a2fac9cec0a71a72a3fa6f59f73114edc504e8cfa1dc8b455dd4dbf562e6eb2" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "99568bdd4f090f783fee1e58e02f38335c0efa17693e235d93217bdcbee94627" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "bcb27a4f76ae89dab575f61b0c3289f26e55a3725511614919dc8341d9b77f50" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "5b7afae79b2ca431bb498232bb31d29df19c6941a06417f8f0e175829f0f6709" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "8fcd0aef73b2ceb6f401fa81667d92b689d19e09fd55d0b9b8a3a3682b1ae231" network for pod "autoscaler-demo-7d467dd49b-c6zfv": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-c6zfv_default" network: add cmd: failed to assign an IP address to container
+  Normal   SandboxChanged          51m (x9 over 51m)  kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Pod sandbox changed, it will be killed and re-created.
+  Normal   Pulling                 51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal   Pulled                  51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal   Created                 51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal   Started                 51m                kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-d6rsg
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.17.86
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://3f359bf125d648279d0d6a94b475bce924c63043d6e06f516247e3344722841e
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:23 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type     Reason                  Age                 From                                                        Message
+  ----     ------                  ----                ----                                                        -------
+  Normal   Scheduled               51m                 default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-d6rsg to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "1f89ae0b99585327dbbabe0eeba72d188ae93722e12e0cabc413ff29b5e4b2f2" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "65472f58c09a6ebc060939e9ba5a5bcf38409052b4bef0e6814cf96c20559634" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "da694ae575b2aca9a75607ef7e67c9b650b88c561f06eb920273cea61b333069" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "48722c239a6e68075785e7d7e3cb641b961a403f76657c803135b9e842b46d77" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "120d80cf3d1ac2232a809ef90b62bdfb5057a5e16ec5acd92447d7aaede564fd" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "ee118d67c1a325b8df96f8b348e859cd3f57e2c784e771f182b9e7b332bfe7b1" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "516c8403f814b4d89638cb36b950bc035ab90aabf73641f2250a7f1f49556fcd" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "060ca19b035c45d6f99a6ccbdd57c34eefec7a393f48b9e788f1b8452f9fdb79" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "7648b6b7d0d1732f487af6ea5a153ccd20308ec630d4aa47a4ae9cdb5e7a6931" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Warning  FailedCreatePodSandBox  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  (combined from similar events): Failed create pod sandbox: rpc error: code = Unknown desc = failed to set up sandbox container "24a10336489f9d471f7ef4e44954b188e7038c334ed50ddfd0d4d3725143a143" network for pod "autoscaler-demo-7d467dd49b-d6rsg": NetworkPlugin cni failed to set up pod "autoscaler-demo-7d467dd49b-d6rsg_default" network: add cmd: failed to assign an IP address to container
+  Normal   SandboxChanged          51m (x10 over 51m)  kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Pod sandbox changed, it will be killed and re-created.
+  Normal   Pulling                 51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal   Pulled                  51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal   Created                 51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal   Started                 51m                 kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-gq9s8
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.27.126
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://ad12359cd818fcb114db986639456fe3b6641898592e7200cf8a3b4ff3de0e06
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:06 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-gq9s8 to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-h7xr9
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.13.117
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://44c4095bafdf1f1c239f23eb428251b1cf092d74e61fd8836c35de31c227a2cd
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:02 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-h7xr9 to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+
+Name:           autoscaler-demo-7d467dd49b-nqm52
+Namespace:      default
+Priority:       0
+Node:           ip-192-168-27-223.ap-southeast-2.compute.internal/192.168.27.223
+Start Time:     Tue, 20 Aug 2019 15:56:54 +1200
+Labels:         app=autoscaler-demo
+                pod-template-hash=7d467dd49b
+Annotations:    kubernetes.io/psp: eks.privileged
+Status:         Running
+IP:             192.168.28.209
+Controlled By:  ReplicaSet/autoscaler-demo-7d467dd49b
+Containers:
+  nginx:
+    Container ID:   docker://6042681d06dd5b5cee3a8705b5db2235083b4dc700f43ffa6b078957a730ec3a
+    Image:          nginx
+    Image ID:       docker-pullable://nginx@sha256:53ddb41e46de3d63376579acf46f9a41a8d7de33645db47a486de9769201fec9
+    Port:           <none>
+    Host Port:      <none>
+    State:          Running
+      Started:      Tue, 20 Aug 2019 15:57:13 +1200
+    Ready:          True
+    Restart Count:  0
+    Environment:    <none>
+    Mounts:
+      /var/run/secrets/kubernetes.io/serviceaccount from default-token-jfj4s (ro)
+Conditions:
+  Type              Status
+  Initialized       True 
+  Ready             True 
+  ContainersReady   True 
+  PodScheduled      True 
+Volumes:
+  default-token-jfj4s:
+    Type:        Secret (a volume populated by a Secret)
+    SecretName:  default-token-jfj4s
+    Optional:    false
+QoS Class:       BestEffort
+Node-Selectors:  <none>
+Tolerations:     node.kubernetes.io/not-ready:NoExecute for 300s
+                 node.kubernetes.io/unreachable:NoExecute for 300s
+Events:
+  Type    Reason     Age   From                                                        Message
+  ----    ------     ----  ----                                                        -------
+  Normal  Scheduled  51m   default-scheduler                                           Successfully assigned default/autoscaler-demo-7d467dd49b-nqm52 to ip-192-168-27-223.ap-southeast-2.compute.internal
+  Normal  Pulling    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  pulling image "nginx"
+  Normal  Pulled     51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Successfully pulled image "nginx"
+  Normal  Created    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Created container
+  Normal  Started    51m   kubelet, ip-192-168-27-223.ap-southeast-2.compute.internal  Started container
+

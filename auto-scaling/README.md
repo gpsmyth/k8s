@@ -11,7 +11,7 @@ From
 https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html
 
 
-## Starting off... 
+## Starting off...  Horizontal Pod Autoscalar
 ``` 
 eksctl create cluster \
 --name hpa-cluster \
@@ -113,5 +113,85 @@ acg-hpa   Deployment/acg-web   0%/50%    1         10        1          84m
 https://kubernetes.io/docs/tasks/tools/install-kubectl/
 was used for bash-completion2
 
+## Cluster-autoscaler
+Used [eks cluster autoscaler setup](https://aws.amazon.com/premiumsupport/knowledge-center/eks-cluster-autoscaler-setup/)
+
+* As per usual - started with
+```
+eksctl create cluster --name myeks --version 1.13 --nodegroup-name standard-workers --node-type t3.medium --nodes 1 --nodes-min 1 --nodes-max 10 --node-ami auto --asg-access
+```
+
+The `--asg-access` is useful in that IAM access is setup, along with the necessary ASG tags  
+```python
+Key: k8s.io/cluster-autoscaler/enabled
+Key: k8s.io/cluster-autoscaler/<ClusterName> .e.g. as per above <ClusterName> would be myeks
+```
+
+* Deploy the Cluster Autoscaler  
+`wget https://raw.githubusercontent.com/kubernetes/autoscaler/master/cluster-autoscaler/cloudprovider/aws/examples/cluster-autoscaler-autodiscover.yaml`
+
+File added as some properties have changed
+> Only property to change was \<My Cluster Name\>
+
+* Create the autoscaler deployment
+`kubectl apply -f cluster-autoscaler-autodiscover.yaml`
+```
+serviceaccount/cluster-autoscaler created
+clusterrole.rbac.authorization.k8s.io/cluster-autoscaler created
+role.rbac.authorization.k8s.io/cluster-autoscaler created
+clusterrolebinding.rbac.authorization.k8s.io/cluster-autoscaler created
+rolebinding.rbac.authorization.k8s.io/cluster-autoscaler created
+deployment.apps/cluster-autoscaler created
+```
+
+* Check the deployment logs for errors
+`kubectl logs -f deployment/cluster-autoscaler -n kube-system`
+
+* Set uo and test scaling  
+** Ideally better to have performed **declaratively**  
+`kubectl create deployment autoscaler-demo --image=nginx`  
+`kubectl scale deployment autoscaler-demo --replicas=50`  
+```
+kubectl get deploy
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+autoscaler-demo   12/50   50           12          3m52s
+```
+** pod count increasing
+
+```
+kubectl get nodes
+NAME                                                STATUS   ROLES    AGE   VERSION
+ip-192-168-27-223.ap-southeast-2.compute.internal   Ready    <none>   13m   v1.13.8-eks-cd3eb0
+ip-192-168-32-193.ap-southeast-2.compute.internal   Ready    <none>   45s   v1.13.8-eks-cd3eb0
+ip-192-168-49-50.ap-southeast-2.compute.internal    Ready    <none>   35s   v1.13.8-eks-cd3eb0
+ip-192-168-89-131.ap-southeast-2.compute.internal   Ready    <none>   42s   v1.13.8-eks-cd3eb0
+```
+** nodes are increasing
+
+```
+kubectl get rs
+NAME                         DESIRED   CURRENT   READY   AGE
+autoscaler-demo-7d467dd49b   50        50        20      5m45s
+```
+
+```
+kubectl get deploy
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+autoscaler-demo   50/50   50           50          7m2s
+```
+`kubectl describe pods autoscaler-demo > autoscaler-demo_pods_describe.txt`
 
 
+Then back down to 10 replicas
+`kubectl get deploy`
+```
+NAME              READY   UP-TO-DATE   AVAILABLE   AGE
+autoscaler-demo   10/10   10           10          29m
+```
+`kubectl describe pods autoscaler-demo > autoscaler-demo_pods_describe_scale_down.txt`
+
+Cleaning up
+```
+kubectl delete deployment autoscaler-demo
+eksctl delete cluster --name myeks
+```
